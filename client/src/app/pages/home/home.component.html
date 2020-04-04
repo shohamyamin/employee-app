@@ -1,0 +1,26 @@
+<div class="container">
+  <mat-form-field class="example-form-field">
+    <mat-label>Search employees</mat-label>
+    <input id="name" matInput type="text" [(ngModel)]="searchValue" required />
+    <button
+      mat-button
+      *ngIf="searchValue"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="searchValue = ''"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="searchEmployees()">
+      Search
+    </button>
+  </div>
+</div>
+<app-employees
+  *ngIf="employees$ | async as employees"
+  [employees]="employees"
+  [searchValue]="searchValue"
+></app-employees>

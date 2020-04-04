@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "username": "shoham",
+      "password": "$2b$10$zliML33.K3QzkzF/5E83EeQSq0CvtxA9k7f287TqGNSpIaJG4k7kO"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "name": "David",
+      "email": "davidl@gmai.com",
+      "role": "Software developer",
+      "imageUrl": "https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png",
+      "fullName": "David Levi",
+      "phoneNumber": "0585330598",
+      "managerName": "Orit Dahan"
+    },
+    {
+      "id": "2",
+      "name": "Yossi",
+      "email": "yossi@gmail.com",
+      "role": "developer",
+      "imageUrl": "https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png",
+      "fullName": "Yossi Cohen",
+      "phoneNumber": "0524590381",
+      "managerName": "Orit Dahan"
+    },
+    {
+      "id": "3",
+      "name": "Haim",
+      "email": "haim@gmail.com",
+      "role": "Electrical Engineer",
+      "imageUrl": "https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png",
+      "fullName": "Haim BarLev",
+      "phoneNumber": "0509699600",
+      "managerName": "Orit Dahan"
+    },
+    {
+      "id": "4",
+      "name": "Orit",
+      "email": "orit@gmai.com",
+      "role": "Director of R&D",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTObuKC0b3jQO7svxZtWxSLDblUPYFf5eCHAj75RdtbMDjuZ5P4&usqp=CAU",
+      "fullName": "Orit Dahan",
+      "phoneNumber": "0508889600",
+      "managerName": "Orit Dahan"
+    },
+    {
+      "id": "5",
+      "name": "Yuval",
+      "email": "yuval@gmai.com",
+      "role": "Software developer",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTObuKC0b3jQO7svxZtWxSLDblUPYFf5eCHAj75RdtbMDjuZ5P4&usqp=CAU",
+      "fullName": "Yuval Maman",
+      "phoneNumber": "0508889600",
+      "managerName": "Orit Dahan"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.employee-card {
+  width: 600px;
+  background-color: #f6f6f6;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}

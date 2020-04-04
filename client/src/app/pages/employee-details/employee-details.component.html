@@ -1,0 +1,20 @@
+<div class="center" *ngIf="employeeById$ | async as employee">
+  <mat-card class="employee-card">
+    <mat-card-header>
+      <div class="spacer"></div>
+      <div class="back-button">
+        <a mat-raised-button color="primary" routerLink="/home">Back</a>
+      </div>
+
+      <img mat-card-avatar [src]="employee.imageUrl" />
+      <mat-card-title>{{ employee.fullName }}</mat-card-title>
+      <mat-card-subtitle>{{ employee.email }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <h1>Name: {{ employee.name }}</h1>
+      <h2>Role: {{ employee.role }}</h2>
+      <h3>Phone Numbe: {{ employee.phoneNumber }}</h3>
+      <h4>Manager: {{ employee.managerName }}</h4>
+    </mat-card-content>
+  </mat-card>
+</div>

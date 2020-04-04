@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+.mat-elevation-z8 {
+  margin: auto;
+  max-width: 800px;
+}
+
+.border {
+  margin: 10px;
+}
