@@ -9,8 +9,8 @@
     {
       "id": "1",
       "name": "David",
-      "email": "davidl@gmai.com",
-      "role": "Software developer",
+      "email": "david@gmail.com",
+      "role": "Software Developer",
       "imageUrl": "https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png",
       "fullName": "David Levi",
       "phoneNumber": "0585330598",
@@ -20,7 +20,7 @@
       "id": "2",
       "name": "Yossi",
       "email": "yossi@gmail.com",
-      "role": "developer",
+      "role": "Software Developer",
       "imageUrl": "https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png",
       "fullName": "Yossi Cohen",
       "phoneNumber": "0524590381",
@@ -39,7 +39,7 @@
     {
       "id": "4",
       "name": "Orit",
-      "email": "orit@gmai.com",
+      "email": "orit@gmail.com",
       "role": "Director of R&D",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTObuKC0b3jQO7svxZtWxSLDblUPYFf5eCHAj75RdtbMDjuZ5P4&usqp=CAU",
       "fullName": "Orit Dahan",
@@ -49,11 +49,21 @@
     {
       "id": "5",
       "name": "Yuval",
-      "email": "yuval@gmai.com",
-      "role": "Software developer",
+      "email": "yuval@gmail.com",
+      "role": "Software Developer",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTObuKC0b3jQO7svxZtWxSLDblUPYFf5eCHAj75RdtbMDjuZ5P4&usqp=CAU",
       "fullName": "Yuval Maman",
       "phoneNumber": "0508889600",
+      "managerName": "Orit Dahan"
+    },
+    {
+      "id": "6",
+      "name": "Roi",
+      "email": "roi@gmail.com",
+      "role": "Software Developer",
+      "imageUrl": "https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png",
+      "fullName": "Roi Bar",
+      "phoneNumber": "0508009600",
       "managerName": "Orit Dahan"
     }
   ]

@@ -15,7 +15,7 @@ const port = 3000;
 const adapter = new FileSync("db.json");
 const db = low(adapter);
 
-// Password hashimg done by https://www.npmjs.com/package/bcrypt
+// Password hashing done by https://www.npmjs.com/package/bcrypt
 
 const salt = bcrypt.genSaltSync(10);
 
@@ -26,15 +26,15 @@ app.use(bodyParser.json());
 app.get("/employees", (req, res) => {
   const employees = db
     .get("employees")
-    .filter(employee => {
+    .filter((employee) => {
       const search = req.query.search || "";
       return utils.employeeToString(employee).includes(search);
     })
-    .map(employee => ({
+    .map((employee) => ({
       id: employee.id,
       name: employee.name,
       email: employee.email,
-      role: employee.role
+      role: employee.role,
     }))
     .value();
   res.json(employees);
@@ -42,20 +42,14 @@ app.get("/employees", (req, res) => {
 
 app.get("/employees/:id", (req, res) => {
   const employeeId = req.params.id;
-  const employeeById = db
-    .get("employees")
-    .find({ id: employeeId })
-    .value();
+  const employeeById = db.get("employees").find({ id: employeeId }).value();
   res.json(employeeById);
 });
 
 app.post("/login", async (req, res) => {
   console.log(req.body);
   try {
-    const user = db
-      .get("users")
-      .find({ username: req.body.username })
-      .value();
+    const user = db.get("users").find({ username: req.body.username }).value();
     if (!user) {
       return res.sendStatus(401);
     }
