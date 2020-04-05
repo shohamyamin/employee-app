@@ -73,8 +73,8 @@ Click on one of the Employees in the table to get more information about this Em
 
 ## Additional libraries
 
-- [bycrpt](https://www.npmjs.com/package/bcrypt) - it used for hashing the passwords
-- [lowdb](https://github.com/typicode/lowdb) - it used for Database management
+- [bycrpt](https://www.npmjs.com/package/bcrypt) - used for hashing the passwords
+- [lowdb](https://github.com/typicode/lowdb) - used for Database management
 
 ## Sources of information
 
