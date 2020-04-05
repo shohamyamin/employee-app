@@ -13,7 +13,6 @@ import { Router } from '@angular/router';
 })
 export class EmployeesComponent implements OnInit, OnChanges {
   @Input() employees: Employee[];
-  @Input() searchValue;
   displayedColumns: string[] = ['id', 'name', 'email', 'role'];
   employeeById: Observable<Employee>;
   dataSource = new MatTableDataSource<Employee>(this.employees);
