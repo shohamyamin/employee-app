@@ -27,7 +27,10 @@ app.get("/employees", (req, res) => {
     .get("employees")
     .filter((employee) => {
       const search = req.query.search || "";
-      return utils.employeeToString(employee).includes(search);
+      return utils
+        .employeeToString(employee)
+        .toLowerCase()
+        .includes(search.toLowerCase());
     })
     .map((employee) => ({
       id: employee.id,
@@ -48,7 +51,6 @@ app.get("/employees/:id", (req, res) => {
 
 //Verifies user data in the DB and returns an answer accordingly
 app.post("/login", async (req, res) => {
-  console.log(req.body);
   try {
     const user = db.get("users").find({ username: req.body.username }).value();
     if (!user) {

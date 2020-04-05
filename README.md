@@ -1,6 +1,6 @@
-# employee-app
+# Employee-App
 
-An Server-Client application that allows the HR department to search for employees and view their details.
+Server-Client application that allows the HR department to search for employees and view their details.
 
 ## Getting Started
 
@@ -32,14 +32,14 @@ cd server && npm install && cd ..
 ## Deployment
 
 Run server:
-cd into server directory and run
+chang directory into server directory and run
 
 ```
 npm start
 ```
 
 Run client:
-cd into client directory and run
+chang directory into client directory and run
 
 ```
 npm start

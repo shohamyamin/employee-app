@@ -33,7 +33,6 @@ export class LoginComponent implements OnInit {
             // redirect to home screen;
 
             this.router.navigateByUrl('/home');
-            console.log('navigate to home');
           }),
           catchError((err) => {
             // show error
