@@ -8,12 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
   user: User = {
     username: '',
-    password: ''
+    password: '',
   };
 
   constructor(private authService: AuthService, private router: Router) {}
@@ -22,26 +22,20 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   login() {
-    console.log(
-      'login was pressed' +
-        'user: ' +
-        this.user.username +
-        ' password: ' +
-        this.user.password
-    );
+    // check if the login fields are empty
     if (this.user.username === '' || this.user.password === '') {
       this.errorMessege = 'The fields are required';
     } else {
       this.authService
         .login(this.user)
         .pipe(
-          tap(response => {
+          tap((response) => {
             // redirect to home screen;
 
             this.router.navigateByUrl('/home');
             console.log('navigate to home');
           }),
-          catchError(err => {
+          catchError((err) => {
             // show error
             this.errorMessege = 'UserName/Password incorrect';
             return NEVER;

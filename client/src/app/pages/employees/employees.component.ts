@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
-  styleUrls: ['./employees.component.css']
+  styleUrls: ['./employees.component.css'],
 })
 export class EmployeesComponent implements OnInit, OnChanges {
   @Input() employees: Employee[];
@@ -31,8 +31,6 @@ export class EmployeesComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.dataSource.paginator = this.paginator;
-
-    console.log(`employees ${this.employees}`);
   }
 
   dispalyEmployeeDetails(employee: Employee) {

@@ -1,5 +1,3 @@
-//code from : https://nodejs.org/en/docs/guides/getting-started-guide/
-
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -23,6 +21,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+// get employees details from the DB and send them to the client
 app.get("/employees", (req, res) => {
   const employees = db
     .get("employees")
@@ -40,12 +39,14 @@ app.get("/employees", (req, res) => {
   res.json(employees);
 });
 
+//get employee by id from the DB and send to the client
 app.get("/employees/:id", (req, res) => {
   const employeeId = req.params.id;
   const employeeById = db.get("employees").find({ id: employeeId }).value();
   res.json(employeeById);
 });
 
+//Verifies user data in the DB and returns an answer accordingly
 app.post("/login", async (req, res) => {
   console.log(req.body);
   try {

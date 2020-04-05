@@ -3,8 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Employee } from '../models/employee.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
+/**
+ * get from the server emploees details
+ */
 export class EmployeesService {
   apiURL = 'http://localhost:3000';
   lastSearch = '';
@@ -13,7 +16,7 @@ export class EmployeesService {
   getEmployees(input: string) {
     this.lastSearch = input;
     return this.http.get<Employee[]>(`${this.apiURL}/employees`, {
-      params: { search: input }
+      params: { search: input },
     });
   }
 

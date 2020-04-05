@@ -4,8 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
+/**
+ * make a login request to the server
+ */
 export class AuthService {
   apiURL = 'http://localhost:3000';
   isAuthenticated = false;
@@ -13,7 +16,7 @@ export class AuthService {
 
   login(user: User) {
     return this.http.post(`${this.apiURL}/login`, user).pipe(
-      tap(response => {
+      tap((response) => {
         this.isAuthenticated = true;
       })
     );

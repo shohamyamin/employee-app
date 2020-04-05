@@ -79,8 +79,9 @@ Click on one of the Employees in the table to get more information about this Em
 ## Sources of information
 
 - [AngularDoc](https://angular.io/docs) - Angular Documentation and tutorials
+- [NodejsDoc](https://nodejs.org/en/docs/guides/getting-started-guide/) nodejs Documentation and tutorials
 - [w3schools](https://www.w3schools.com/html/) - HTML tutorials
-- [stackoverflow](https://stackoverflow.com/questions)
+- [Stackoverflow](https://stackoverflow.com/questions)
 - [Google](https://www.google.com/)
 - [GoodREADME](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) - how to write a good README
 
